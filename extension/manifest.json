@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube Saver",
+    "description": "Send youtube video id and title to local server",
+    "version": "0.3.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "js": [
+                "scripts/jquery-3.6.0.min.js",
+                "content.js"
+            ],
+            "css": [
+                "styles/styles.css"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}
